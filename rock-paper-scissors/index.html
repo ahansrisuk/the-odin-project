@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+</body>
+<script>
+
+const actions = ['rock', 'paper', 'scissors']
+
+let gameOver = false;
+
+function computerPlay() {
+    let index = Math.floor(Math.random() * 3);
+    return actions[index];
+}
+
+function playRound(playerSelection, computerSelection){
+    let result = actions.indexOf(playerSelection) - actions.indexOf(computerSelection);
+
+    console.log(`Player chose: ${playerSelection}`);
+    console.log(`Computer chose: ${computerSelection}`);
+
+    if (playerSelection === computerSelection) {
+        return "Draw.";
+    } else if ((result + 3) % 3 === 1) {
+        gameOver = true;
+        return "Player wins.";
+    } else {
+        gameOver = true;
+        return "Computer wins."
+    }
+}
+
+function game() {
+    while (!gameOver) {
+        const playerSelection = prompt('What is your choice?').toLowerCase();
+        const computerSelection = computerPlay();
+        
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+
+</script>
+
+</html>
