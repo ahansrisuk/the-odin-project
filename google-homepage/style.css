@@ -1,0 +1,53 @@
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid black;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.nav-section {
+    margin: 0px;
+    box-sizing: border-box; 
+}
+
+li {
+    display: inline;
+    padding: 0px 4px;
+    font-size: small;
+}
+
+.container {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding-top: 200px;
+}
+
+#logo {
+    margin: 8px 0px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 16px;
+    padding: 4px;
+}
+
+input {
+    border: hidden;
+    outline: none;
+}
