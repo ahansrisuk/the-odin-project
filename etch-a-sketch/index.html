@@ -5,9 +5,23 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <h1>Etch-A-Sketch</h1>
-    <div class="container">
-        <!-- boxes get appended here -->
+    <div class="main">
+        <h1>Etch-A-Sketch</h1>
+        <div>
+            <button id="drawButton">Draw a New Grid</button>
+            <button id="clearButton">Clear Grid</button>
+        </div>
+        <div>
+            <label for="normal">Normal Mode</label>
+            <input id="normal" type="checkbox">
+            <label for="gradient">Gradient Mode</label>
+            <input id="gradient" type="checkbox">
+            <label for="random">Random Mode</label>
+            <input id="random" type="checkbox">
+        </div>
+        <div class="container">
+            <!-- boxes get appended here -->
+        </div>
     </div>
 </body>
     <script src="app.js"></script>
