@@ -1,3 +1,26 @@
+html, body {
+    height: 100%;
+}
+
 h1 {
     color: red;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    height: 324px;
+}
+
+.grid-row {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.box {
+    flex-grow: 1;
+    border: 1px solid black;
 }
