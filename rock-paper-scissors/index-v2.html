@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+
+    <p>Player wins: <span id="playerWinCount"></span></p>
+    <p>Computer wins: <span id="computerWinCount"></span></p>
+
+</body>
+
+<script>
+
+const actions = ['rock', 'paper', 'scissors']
+let playerWinCount = 0;
+let computerWinCount = 0;
+
+const buttons = document.querySelectorAll('button')
+
+buttons.forEach( (button) => {
+    button.addEventListener('click', (event) => {
+        playRound(event.target.id, computerPlay())
+    })
+    }
+)
+
+function computerPlay() {
+    let index = Math.floor(Math.random() * 3);
+    return actions[index];
+}
+
+function playRound(playerSelection, computerSelection){
+    let result = actions.indexOf(playerSelection) - actions.indexOf(computerSelection);
+
+    console.log(`Player chose: ${playerSelection}`);
+    console.log(`Computer chose: ${computerSelection}`);
+
+    if (playerSelection === computerSelection) {
+        alert("Draw.");
+        checkForWinner();
+    } else if ((result + 3) % 3 === 1) {
+        playerWinCount++;
+        alert("Player wins.");
+        checkForWinner();
+    } else {
+        computerWinCount++;
+        alert("Computer wins.");
+        checkForWinner();
+    }
+
+    document.getElementById("playerWinCount").textContent = playerWinCount;
+    document.getElementById("computerWinCount").textContent = computerWinCount;
+}
+
+function checkForWinner() {
+    if (playerWinCount >= 5) {
+        alert("Player has won the game!")
+        gameOver = true;
+    } else if (computerWinCount >= 5) {
+        alert("Computer has won the game!")
+        gameOver = true;
+    }
+    
+}
+
+
+</script>
+
+</html>
