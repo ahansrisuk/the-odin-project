@@ -44,6 +44,6 @@ button {
     font-size: 24px;
 }
 
-.operator {
+.operator, #decimal, #equals, #clear {
     background-color: lightgrey;
 }
