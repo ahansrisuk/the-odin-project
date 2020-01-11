@@ -60,7 +60,7 @@ function operate(firstNumber, secondNumber, operator) {
         case '-':
             return firstNumber - secondNumber;
         case '/':
-            if (secondNumber == 0) {
+            if (secondNumber === 0) {
                 clearData();
                 alert("You can't divide by 0.")
             } else {
