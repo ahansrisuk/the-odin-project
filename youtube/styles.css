@@ -43,7 +43,6 @@ html, body {
     display: flex;
     background-color: #F9F9F9;
     padding: 24px;
-    width: 100%;
 }
 
 .main {
@@ -52,7 +51,45 @@ html, body {
 
 .sidebar {
     flex-grow: 1;
+    margin: 0 0 0 20px;
 }
 
-.title {
+.video-title-box h3 {
+    font-weight: normal;
+}
+
+.video-info-box p {
+    color: #606060;
+    font-size: 14px;
+}
+
+.watchlist-video {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+hr {
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.sidebar h3 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.text-content {
+    margin-left: 4px;
+}
+
+.text-content h4 {
+    font-size: 14px;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.text-content p {
+    margin: 0;
+    color: #606060;
+    font-size: 14px;
 }
