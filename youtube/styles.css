@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    flex-grow: 1;
+}
+
+.navbar .search-div {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    height: 30px;
+}
+
+.search-bar input {
+    border: none;
+    border: .5px solid gray;
+}
+
+.search-bar button {
+    background-color: lightgray;
+    border: .5px solid gray;
+    border-left: none;
+}
+
+.container {
+    display: flex;
+    background-color: #F9F9F9;
+    padding: 24px;
+    width: 100%;
+}
+
+.main {
+    flex-grow: 2;
+}
+
+.sidebar {
+    flex-grow: 1;
+}
+
+.title {
+}
