@@ -56,3 +56,13 @@ h2 {
     flex: 1;
     border: 1px solid black;
 }
+
+.gradient {
+    background-image: linear-gradient(
+        to bottom,
+        #828282,
+        #828282 50%,
+        #5E5E5E 50%,
+        #737373
+        );
+}
